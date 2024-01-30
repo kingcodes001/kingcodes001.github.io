@@ -1,0 +1,247 @@
+.contact-king {
+    width: 100%;
+    margin-top: 15%;
+}
+.contact-king a{
+    text-decoration: none;
+}
+.king-contact-intro{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.king-contact-intro h1{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.king-contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.king-form{
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.king-form::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 500px;
+    transform-origin: bottom right;
+    background: rgb(0, 255, 0);
+    z-index: 1;
+    animation: form 6s linear infinite;
+    animation-delay: -3s;
+}
+.king-form::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 500px;
+    transform-origin: bottom right;
+    background: rgb(255, 0, 0);
+    z-index: 1;
+    animation: form 6s linear infinite;
+}
+@keyframes form {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.border-lines{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.border-lines::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 500px;
+    transform-origin: bottom right;
+    background: rgb(0, 255, 0);
+    z-index: 1;
+    animation: form 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.border-lines::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 500px;
+    transform-origin: bottom right;
+    background: red;
+    z-index: 1;
+    animation: form 6s linear infinite;
+    animation-delay: -4.5s;
+}
+.king-form form{
+    background-color: rgb(0, 17, 255);
+    width: 98.5%;
+    height: 98.5%;
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    inset: 4px;
+    float: left;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    width: 90%;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    z-index: 10;
+    border: none;
+    position: relative;
+    font-size: 16px;
+}
+.input-box textarea{
+    width: 100%;
+    z-index: 2;
+    inset: 2px;
+    padding-left: 15px;
+    font-size: 16px;
+    resize: none;
+    color: white;
+    height: 100px;
+    background-color: transparent;
+    outline: none;
+    position: relative;
+    border: none;
+}
+.king-form form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    transition: .5s;
+}
+.king-form form .input-box input:valid ~ span,
+.king-form form .input-box input:focus ~ span,
+.king-form form .input-box textarea:valid ~ span,
+.king-form form .input-box textarea:focus ~ span
+{
+    color: white;
+    font-size: 20px;
+    transform: translateY(-50px);
+}
+
+.king-form form .input-box i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    /*background-color: rgb(0, 255, 255);*/
+    border-radius: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    transition: .5s;
+}
+.king-form form .input-box input:valid ~ i,
+.king-form form .input-box input:focus ~ i 
+{
+    height: 50px;
+}
+.king-form form .input-box textarea:valid ~ i,
+.king-form form .input-box textarea:focus ~ i
+{
+    height: 110px;
+}
+.input-buttons{
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.input-buttons input[type="submit"]{
+    background-color: rgb(0, 255, 0);
+    padding: 12px;
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    transition: .1s;
+}
+.input-buttons input[type="reset"]{
+    font-size: 20px;
+    background-color: red;
+    padding: 12px;
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+.king-form h1{
+    color: white;
+}
+.input-buttons input[type="reset"]:hover{
+    box-shadow: 10px 0px 50px 20px red;
+    font-weight: bold;
+}
+.input-buttons input[type="submit"]:hover{
+    box-shadow: 10px 0px 50px 20px rgb(0, 255, 0);
+    font-weight: bold;
+}
+.king-contact-icon{
+    background-color: white;
+    border-radius: 100%;
+    width: fit-content;
+    margin-right: 15px;
+}
+#contact-icon{
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+    padding: 10px;   
+}
+.king-contact-box{
+    display: flex;
+    padding: 15px;
+}
+.king-contact-text h1{
+    color: white;   
+}
+.king-contact-text p{
+    color: #cbc8c8;
+}
