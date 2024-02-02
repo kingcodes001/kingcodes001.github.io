@@ -3,12 +3,10 @@
         background-color: blue;
         padding: 10px;
         border-radius: 5px;
-        width: 100%;
-        
+        width: 100%;  
     }
     .icons{
         display: inline-flex;
-        
     }
     #check:checked~.icons #open-menu{
         display: none;

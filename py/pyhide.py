@@ -9,4 +9,4 @@ function hello() {
 """
 
 minified_code = rjsmin.jsmin(original_code)
-print(minified_code)
+print(minified_code)s
