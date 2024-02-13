@@ -6,9 +6,24 @@
     <title>KING_CODES</title>
     <script src="./js/scrptLK.js">
     </script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> -->
+    <script src="./js/scriptLD.js"></script>
+    <link rel="stylesheet" href="./css/loader.css">
 </head>
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false">
+
+    <loader class="loader">
+        <h1>KING_CODES</h1>
+        <div>
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <span class="span4"></span>
+            <span class="span5"></span>
+            <span class="span6"></span>
+            <span class="span7"></span>
+        </div>
+        </loader>
+
     <header class="header">
         <a href="#home" class="logo">KING_CODES</a>
         <input type="checkbox" id="check">
@@ -26,7 +41,7 @@
         </nav>
     </header>
     <section id="home">
-        
+      
             <div class="king-home-container">
             <div class="king-name">
                 <h2>welcome to</h2><br>
@@ -56,16 +71,20 @@
  <div class="container">
     <div class="min-container">
         <div class="king-image">
-            <img src="./img/logo2.PNG" alt="KING_CODES" class="img">
+            <img src="./img/logo2.webp" alt="KING_CODES" class="img">
         </div>
         <div class="king-about-content">
-            <p>My name is Jackson also you can call me KING_CODES</p>
-            <p>my name is jackson
-I am a designer of various science and technology projects due to my great 
+            <p>My name is Jackson a person who interested in science and technology and my role model is ELON MUSK</p>
+            <p>
+I am a innovator of various science and technology projects due to my great 
 knowledge of using computers and I have been able to participate in science
 and technology competitions and exhibitions in 2023 as a student from Azania
 secondary school.<br>
-my nick name is KING_CODES</p>
+<p class="read-more-text">
+i have been interested in computer since i was in secondary education level that incourage me to found a club for science and technology at Azania Secondary School which was known as AST CLUB(Azania Science and Technology) and i was appointed as Vice Chairperson of AST CLUB.<br>also i was one of best innovators in Azania Secondary School 2023 Azania was a FIRST RUNNER IET EXPO 2023 rewarded with certifacate as a best school for good innovators students in 2023<br> 
+and untill now i am still learning about computer skills in order to maximize my computer skills so as i can accomplish my dreams and earning more money through my skills.
+</p>
+<p class="readMore-btn">Read More</p>
                 <div class="pronic-link"> <a href="pronictech.github.io">Vist Pronic-Tech</a></div>
         </div>
         
@@ -83,14 +102,14 @@ my nick name is KING_CODES</p>
 
                     <div class="projects-box" id="saproject" >
                         <div class="box-projects-img"> 
-                            <img src="./img/18005.jpg" alt="KING_CODES PROJECTS TITLE">
+                            <img src="./img/saproject.jpg" alt="KING_CODES PROJECTS TITLE">
                         </div>
                         <div class="king-projects-info">
                             <div class="projects-info">
                             <h1>
                                 Security Alarm
                             </h1>
-                                <p onclick="saproject()" class="read-project">Read More</p>
+                                <p class="read-project">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -131,16 +150,16 @@ my nick name is KING_CODES</p>
                     </p>
                 <h1>Order Form</h1>
                 <div class="input-order">
-                    <input type="text" name="client Name" placeholder="Full Name">
+                    <input type="text" id="client-name" name="client Name" placeholder="Full Name" required>
                 </div>
 
                 <div class="input-order">
-                    <input type="email" name="client email" placeholder="Your Email"><br><br>
-                    <input type="number" name="client Phone number" placeholder="Your Phone number">
+                    <input type="email" name="client email" id="client-email" placeholder="Your Email" required><br><br>
+                    <input type="number" name="client Phone number" id="client-phone number" placeholder="Your Phone number">
                 </div>
 
                 <div class="input-order">
-                    <select name="client service possession">
+                    <select name="client service possession" required>
                         <option selected disabled hidden>possession</option>
                         <option>Personal</option>
                         <option>Orgainization</option>
@@ -213,7 +232,7 @@ my nick name is KING_CODES</p>
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_captcha" value="false">
                 <div class="input-buttons">
-                    <input type="submit"  value="Submit Order">
+                    <input type="submit"  value="Submit Order" onsubmit="getvalue()">
                     </div>
             </form>
         </div>
@@ -225,14 +244,14 @@ my nick name is KING_CODES</p>
 
             <div class="service-container">
                 <div class="img-service">
-                    <img src="./img/order1.jpg" alt="website-development" class="img-symbol">
+                    <img src="./img/order1.webp" alt="website-development" class="img-symbol">
                 </div>
                 <div class="service-datails">
                     <h1 class="h-service">Website design & development</h1>
                     <p class="p-service">
-                         As the expert in website design and development. I am providing the service of creating website for personal or orgainization purpose 
+                         Now you can get website either for Personal or organization like company,tutitions and also for Advertisiment of goods and services.
 
-                    </p>
+                    </p><br> required<br>
                     <button class="service-order" onclick="websiteform()" id="opening-form">
                         Order Now
                     </button>
@@ -242,12 +261,12 @@ my nick name is KING_CODES</p>
 
             <div class="service-container">
                 <div class="img-service">
-                    <img src="./img/order3.jpg" alt="website-development" class="img-symbol">
+                    <img src="./img/order3.webp" alt="website-development" class="img-symbol">
                 </div>
                 <div class="service-datails">
                     <h1 class="h-service">Documents writing</h1>
                     <p class="p-service">
-                        As a computer expert i provide a service of typing documents from hand writing documents to computer soft copy documents
+                        Now you don't need to go Stationary anymore for typing your documents.Now you just need to send your hand written documents to KING_CODES email and wait for you typed documents through your email
                     </p>
                     <br>
                     <button class="service-order" onclick="typingform()"  id="opening-form">
@@ -259,12 +278,12 @@ my nick name is KING_CODES</p>
 
             <div class="service-container">
                 <div class="img-service">
-                    <img src="./img/order2.jpg" alt="website-development" class="img-symbol">
+                    <img src="./img/order2.webp" alt="website-development" class="img-symbol">
                 </div>
                 <div class="service-datails">
                     <h1 class="h-service">Graphics Designing</h1>
                     <p class="p-service">
-                        I am also dealing with software graphics design i have great skills in graphics designs so as i am able to <span class="span-head"> making logo and bs cards and so on.</span>
+                        Now you can get any graphics designs quickly for just fiil the form that will appear after clicking ordernow button<span class="span-head">graphics design like logo , bs cards and so on </span>
                     </p><br>
                     <button class="service-order" onclick="graphicsform()" id="opening-for">
                         Order Now
@@ -286,7 +305,7 @@ my nick name is KING_CODES</p>
         <div class="contact-king">
         <div class="king-contact-intro">
             <h1>Contacts Me</h1>
-            <p>you are welcome to my contact details,LET'S WORK TOGETHER</p>
+            <p>you are welcome to my contact details</p>
         </div>
     <div class="king-contact-container">
 
@@ -306,7 +325,7 @@ my nick name is KING_CODES</p>
                     </div>
             </div>
 
-        <a href="mailto:kingcodes001@gmail.com">
+        <a href="mailto:kingcodes001@gmail.com" target="_parent">
         <div class="king-contact-box">
             <div class="king-contact-icon"><i class="bx bx-envelope" id="contact-icon"></i>
             </div>
@@ -320,7 +339,7 @@ my nick name is KING_CODES</p>
                 </div>
         </div></a>
 
-        <a href="https://www.instagram.com/king_codes001/">
+        <a href="https://www.instagram.com/king_codes001/" target="_parent">
             <div class="king-contact-box">
                 <div class="king-contact-icon"><i class="bx bxl-instagram" id="contact-icon"></i>
                 </div>
@@ -333,7 +352,7 @@ my nick name is KING_CODES</p>
                         </p>
                     </div>
             </div></a>
-            <a href="https://www.tiktok.com/@king_code001?lang=en">
+            <a href="https://www.tiktok.com/@king_code001?lang=en" target="_parent">
                 <div class="king-contact-box">
                     <div class="king-contact-icon"><i class="bx bxl-tiktok" id="contact-icon"></i>
                     </div>
@@ -346,6 +365,7 @@ my nick name is KING_CODES</p>
                             </p>
                         </div>
                 </div></a>
+                <a href="https://www.youtube.com/channel/UCReCccc7fF4tgtMki8AN4KA" target="_parent">
                 <div class="king-contact-box">
                 <div class="king-contact-icon">
                     <i class="bx bxl-youtube" id="contact-icon"></i>
@@ -358,9 +378,9 @@ my nick name is KING_CODES</p>
                             King_codes
                         </p>
                     </div>
-            </div>
+            </div></a>
 
-            <a href="#home">
+            <a href="https://twitter.com/KING_CODES001" target="_parent">
             <div class="king-contact-box">
                 <div class="king-contact-icon"><i class="bx bxl-twitter" id="contact-icon"></i>
                 </div>
@@ -379,19 +399,19 @@ my nick name is KING_CODES</p>
     <form action="https://formsubmit.co/kingcodes001@gmail.com" method="POST">
         <h1>contact form</h1>
     <div class="input-box">
-    <input type="text" required name="name" >
+    <input type="text" id="name" required name="name" >
     <span>full Name</span>
     <i></i>
     </div>
-    <div class="input-box"   >
-    <input type="email" required name="email">
+    <div class="input-box">
+    <input type="email" required id="email" name="email">
     <span>email</span>
     <i></i>
     </div>
     <div class="input-box">
-        <textarea name="message" required></textarea>
-        <span>message</span>
-        <i></i>
+    <textarea name="message" required></textarea>
+    <span>message</span>
+    <i></i>
     </div>
     <input type="hidden" name="_next" value="https://kingcodes001.github.io/contact.html">
     <input type="hidden" name="_subject" value="New message">
@@ -400,7 +420,7 @@ my nick name is KING_CODES</p>
 
 
     <div class="input-buttons">
-        <input type="submit"  value="Send">
+        <input type="submit" onsubmit="getvalue()"  value="Send">
             <input type="reset" value="Clear Data">
         </div>
     </div>
@@ -413,12 +433,6 @@ my nick name is KING_CODES</p>
     </div>
     </div>
     </section>
-    <script src="js/scriptF.js">
-    </script>
-    <script src="js/scriptPF.js">
-    </script>
-        <script src="js/scriptHD.js">
-        </script>
-        <script src="py/pyhide.py"></script>
+
 </body>
 </html>

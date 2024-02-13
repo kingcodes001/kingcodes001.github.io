@@ -50,7 +50,7 @@
     padding: 15px;
 
 }
-.king-projects-info:hover{
+.king-projects-info:hover {
     bottom: -5rem;
 }
 .read-project{
@@ -69,26 +69,28 @@
     display: none;
     padding-top: 5px;
     width: 100%;
+    background-color: white;
+    min-height: 100vh;
 }
 .proposal-head h1{
-    color: white;
+    color: blue;
     text-align: center;
     font-size: 2rem;
     text-decoration: 3px dotted underline;
 }
 .proposal-infomation h3{
-    color: white;
+    color: blue;
     text-align: center;
     font-size: 1.5em;
     font-weight: normal;
 }
 .proposal-head p{
-    color: white;
+    color: blue;
     font-size: 1.5rem;
     text-align: center;
 }
 .proposal-infomation{
-    color: cyan;
+    color: black;
     font-size: 20px;
 }
 .proposal-infomation ol li{

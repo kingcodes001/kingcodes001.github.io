@@ -5,6 +5,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    user-select: none;
 }
 .thank-container{
     display: flex;
@@ -77,4 +78,12 @@ body{
 .social-medias h5{
     font-size: 18px;
     color: cyan;
+}
+#visitor-email , #service-email{
+    color: blue;
+    font: 18px;
+}
+#visitor-name , #service-order , #service-name{
+    color: green;
+    font-size: 20px;
 }

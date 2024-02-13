@@ -1,13 +1,28 @@
-// import "../css/style.css"; throw "./index.html";
 var sa_project = document.getElementById("saproject");
 var sa_project_information = document.getElementById("saproject-information-proposal");
+let saclick = document.querySelector(".read-project");
 
 
-function saproject(){
-    services_section.style.display="none"
-    contacts_section.style.display="none"
-    home_section.style.display="none"
-    about_section.style.display="none"
-    sa_project.style.display="none"
-    sa_project_information.style.display="initial"
+//section variables
+var projects_section = document.getElementById("projects");
+var contacts_section = document.getElementById("contacts");
+var services_section = document.getElementById("services");
+var home_section = document.getElementById("home");
+var about_section = document.getElementById("about");
+
+
+function backnormal(){
+    services_section.style.display="flex"
+    contacts_section.style.display="flex"
+    home_section.style.display="flex"
+    about_section.style.display="flex"
+    projects_section.style.display="flex"
+    sa_project.style.display="grid"
+    sa_project_information.style.display="none"
 }
+
+saclick.addEventListener("click",
+function(){
+    alert("Sorry security alarm project explanation unavailabale/n/n project explanation will be available in 24/3/2024");
+}
+);

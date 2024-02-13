@@ -15,7 +15,6 @@
     align-items: center;    
 }
 .king-name h2{
-    color: transparent;
     text-shadow: 2px 0px 30px cyan;
     -webkit-text-stroke: 2px white;
     animation-name: king-name;
@@ -124,10 +123,26 @@
 .king-about-content p{
     font-size: 23px;
     margin-bottom: 15px;
-    color: black;
-    font-weight: 700;
+    color: #ffffff;
+    font-weight: 300;
 }
 #tutorial{
     display: none;
     visibility: hidden;
+}
+.readMore-btn{
+    color: white;
+    background: green;
+    border-radius: 15px;
+    font-size: 18px;
+    width: fit-content;
+    padding: 15px;
+    transition: all 1s;
+}
+.readMore-btn:hover{
+    color: rgb(178, 33, 33);
+}
+.read-more-text{
+    display: none;
+    transition-delay: all 5s;
 }

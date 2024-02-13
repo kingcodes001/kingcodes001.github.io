@@ -17,7 +17,7 @@ var about_section = document.getElementById("about");
 
 //read more in the projects sections in security alarm project as saproject 
 
-
+const service_name = document.querySelector('#service-order');
 
 
 function websiteform(){
@@ -26,6 +26,7 @@ function websiteform(){
     typing_form_part.style.display="none";
     opening_form_button.style.display="none";
     order_form.style.display="flex";
+    service_name.innerHTML = "Website design & development order"
 }
 
 function graphicsform(){
@@ -34,6 +35,7 @@ function graphicsform(){
     typing_form_part.style.display="none";
     opening_form_button.style.display="none";
     opening_form_butto.style.display="none";
+    service_name.innerHTML = "graphics design order"
 }
 
 function typingform(){
@@ -42,6 +44,7 @@ function typingform(){
     website_form_part.style.display="none";
     opening_form_button.style.display="none";
     opening_form_butto.style.display="none";
+    service_name.innerHTML = "documents typing order"
     alert("SORRY KING_CODES will need you to send a hand written document in his email:kingcodes001@gmail.com so as to get the feedback of your order as soon as possible THANK YOU")
 }
 
