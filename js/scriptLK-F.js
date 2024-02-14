@@ -7,18 +7,6 @@ document.head.appendChild(link);
 var link = document.createElement('link');
 link.rel = 'stylesheet';
 link.type = 'text/css';
-link.href = './css/loader.css';
-document.head.appendChild(link);
-
-var script = document.createElement('script');
-script.language = 'javascript';
-script.type = 'text/javascript';
-script.src = 'js/scriptLD.js';
-document.head.appendChild(script);
-
-var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
 link.href = './css/media.css';
 document.head.appendChild(link);
 
@@ -44,3 +32,15 @@ script.language = 'javascript';
 script.type = 'text/javascript';
 script.src = 'js/scriptAF.js';
 document.head.appendChild(script);
+
+var script = document.createElement('script');
+script.language = 'javascript';
+script.type = 'text/javascript';
+script.src = 'js/scriptLD.js';
+document.head.appendChild(script);
+
+var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = './css/loader.css';
+document.head.appendChild(link);

@@ -23,6 +23,6 @@ function backnormal(){
 
 saclick.addEventListener("click",
 function(){
-    alert("Sorry security alarm project explanation unavailabale/n/n project explanation will be available in 24/3/2024");
+    alert("Sorry security alarm project explanation unavailabale.project explanation will be available in 24/3/2024");
 }
 );
