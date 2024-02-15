@@ -3,8 +3,9 @@ var order_form = document.getElementById("service-form");
 var website_form_part = document.getElementById("website-making-term-service-order");
 var graphics_form_part = document.getElementById("graphics-design-term-service-order");
 var typing_form_part = document.getElementById("document-typing-term-service-order");
-var opening_form_button = document.getElementById("opening-form");
-var opening_form_butto = document.getElementById("opening-for");
+const opening_form_button = document.getElementById("opening-form");
+const opening_for_button = document.getElementById("opening-for");
+
 
 
 //section variables
@@ -14,19 +15,18 @@ var services_section = document.getElementById("services");
 var home_section = document.getElementById("home");
 var about_section = document.getElementById("about");
 
-
 //read more in the projects sections in security alarm project as saproject 
 
 const service_name = document.querySelector('#service-order');
 
 
 function websiteform(){
-    graphics_form_part.style.display="none";
-    opening_form_butto.style.display="none";
-    typing_form_part.style.display="none";
-    opening_form_button.style.display="none";
     order_form.style.display="flex";
-    service_name.innerHTML = "Website design & development order"
+    opening_form_button.style.display="none";
+    graphics_form_part.style.display="none";
+    typing_form_part.style.display="none";
+    opening_for_button.style.display="none";
+    opening_for_button.style.display="none";
 }
 
 function graphicsform(){
@@ -34,8 +34,7 @@ function graphicsform(){
     website_form_part.style.display="none";;
     typing_form_part.style.display="none";
     opening_form_button.style.display="none";
-    opening_form_butto.style.display="none";
-    service_name.innerHTML = "graphics design order"
+    opening_for_button.style.display="none";
 }
 
 function typingform(){
@@ -43,8 +42,7 @@ function typingform(){
     graphics_form_part.style.display="none";
     website_form_part.style.display="none";
     opening_form_button.style.display="none";
-    opening_form_butto.style.display="none";
-    service_name.innerHTML = "documents typing order"
+    opening_for_button.style.display="none";
     alert("SORRY KING_CODES will need you to send a hand written document in his email:kingcodes001@gmail.com so as to get the feedback of your order as soon as possible THANK YOU")
 }
 
@@ -54,7 +52,7 @@ function close_form(){
     graphics_form_part.style.display="initial";
     website_form_part.style.display="initial";
     opening_form_button.style.display="initial";
-    opening_form_butto.style.display="initial";
+    opening_for_button.style.display="initial";
 }
 
 

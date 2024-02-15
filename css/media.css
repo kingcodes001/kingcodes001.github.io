@@ -1,9 +1,12 @@
 @media (max-width:1100px){
-    .bar:hover{
+    .navbar a:hover,
+    .navbar a.active
+    {
         background-color: blue;
         padding: 10px;
         border-radius: 5px;
-        width: 100%;  
+        font-weight: bolder;
+        width: 80%;  
     }
     .icons{
         display: inline-flex;
@@ -28,15 +31,15 @@
         height: 0rem;
         overflow: hidden;
         opacity: 1;
-        background-color: #162033;
+        background-color: #18191a;
         transform: translateY(-0px);
         transition: 1s ease;
     }
-    #check:checked~.navbar .bar{
+    #check:checked~.navbar a{
         transform: translateY(0);
         opacity: 1;
     }
-    .navbar .bar{
+    .navbar a{
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
