@@ -21,6 +21,38 @@ window.onscroll = ()=> {
 
 
 
+ScrollReveal({
+     reset: true,
+     distance : '100%',
+     duration: 2500,
+     delay: 400
+    });
+
+
+
+    //scrollrevial in about us section
+    ScrollReveal().reveal('.king-about-head', { delay: 200 , origin: 'left' });
+    ScrollReveal().reveal('.king-about-content', { delay: 300 , origin: 'right' });
+    ScrollReveal().reveal('.king-image img', { delay: 400 , origin: 'left' });
+    ScrollReveal().reveal('.readMore-btn', { delay: 800 , origin: 'bottom' });
+    
+    // //scrollrevial in project section
+    ScrollReveal().reveal('.king-projects h1', { delay: 500 , origin: 'left' });
+    ScrollReveal().reveal('.king-projects-container', { delay: 550 , origin: 'top', interval: 100 });
+    
+    //scrollrevial in service section
+    ScrollReveal().reveal('.service-head', { delay: 500 , origin: 'left' });
+    ScrollReveal().reveal('.service-box', { delay: 550 , origin: 'bottom', interval: 100 });
+    
+    // //scrollrevial in contact me section
+    ScrollReveal().reveal('.king-contact-intro h1 , .king-contact-intro p', { delay: 500 , origin: 'left' });
+    ScrollReveal().reveal('.king-form', { delay: 500 , origin: 'right' });
+    ScrollReveal().reveal('.king-contact-info', { delay: 560 , origin: 'top', interval: 200 });
+
+    
+
+
+
 
 
 
