@@ -79,6 +79,10 @@ script.src = 'js/scriptHD.js';
 document.head.appendChild(script);
 
 var script = document.createElement('script');
+script.src = 'https://unpkg.com/scrollreveal';
+document.head.appendChild(script);
+
+var script = document.createElement('script');
 script.language = 'javascript';
 script.type = 'text/javascript';
 script.src = 'js/scriptF.js';
