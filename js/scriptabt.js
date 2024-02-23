@@ -1,3 +1,27 @@
+
+
+const readmore_btn = document.querySelector(".readMore-btn");
+const readmore_text = document.querySelector(".read-more-text");
+var abtcontent = document.querySelector(".king-about-content");
+
+readmore_btn.style.background = "rgb(0,255,0)";
+readmore_btn.style.color = "white";
+
+readmore_btn.addEventListener('click', (e) => 
+{
+        readmore_text.classList.toggle('read-more-text') ;
+
+    if(readmore_btn.innerText === 'Read More'){
+        readmore_btn.innerHTML = 'Read Less';
+        readmore_btn.style.background = "red";
+    }
+    else{
+        readmore_btn.innerText = 'Read More';
+        readmore_btn.style.background = "cyan";
+    }
+});
+
+
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header .navbar a');
 
@@ -23,8 +47,8 @@ window.onscroll = ()=> {
 
 ScrollReveal({
      reset: true,
-     distance : '50px',
-     duration: 2000,
+     distance : '65px',
+     duration: 2500,
      delay: 400
     });
 
@@ -59,25 +83,3 @@ ScrollReveal({
 
 
 
-
-
-const readmore_btn = document.querySelector(".readMore-btn");
-const readmore_text = document.querySelector(".read-more-text");
-var abtcontent = document.querySelector(".king-about-content");
-
-readmore_btn.style.background = "rgb(0,255,0)";
-readmore_btn.style.color = "white";
-
-readmore_btn.addEventListener('click', (e) => 
-{
-        readmore_text.classList.toggle('read-more-text') ;
-
-    if(readmore_btn.innerText === 'Read More'){
-        readmore_btn.innerHTML = 'Read Less';
-        readmore_btn.style.background = "red";
-    }
-    else{
-        readmore_btn.innerText = 'Read More';
-        readmore_btn.style.background = "cyan";
-    }
-});
