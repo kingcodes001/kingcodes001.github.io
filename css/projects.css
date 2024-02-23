@@ -50,7 +50,7 @@
     padding: 15px;
 
 }
-.king-projects-info:hover {
+.projects-box:hover  .king-projects-info {
     bottom: -5rem;
 }
 .read-project{
