@@ -23,7 +23,6 @@ function backnormal(){
 
 saclick.addEventListener("click",
 function(){
-    alert("Smart Manager is an advanced web-based management system designed to simplify and automate day-to-day business operations. It provides a centralized platform for managing resources, tracking performance, and improving decision-making with real-time insights.
-This system is ideal for organizations and businesses that require efficiency, accuracy, and transparency in their processes. With intuitive dashboards, data analytics, and automated workflows, Smart Manager empowers businesses to operate seamlessly and scale effectively.");
+    alert("Smart Manager is an advanced web-based management system designed to simplify and automate day-to-day business operations. It provides a centralized platform for managing resources, tracking performance, and improving.");
 }
 );
