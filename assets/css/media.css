@@ -1,0 +1,216 @@
+@media (max-width:1100px){
+    .navbar a:hover,
+    .navbar a.active
+    {
+        background-color: blue;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bolder;
+        width: 80%;  
+    }
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #open-menu{
+        display: none;
+    }
+    #check:checked~.icons #close-menu{
+        display: block;
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+    .icons #close-menu{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0rem;
+        overflow: hidden;
+        opacity: 1;
+        background-color: #18191a;
+        transform: translateY(-0px);
+        transition: 1s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px) {
+    .logo{
+        font-size: 1.3rem;
+    }
+    .king-about-head{
+        padding: 0px 20px;
+    }
+    .king-about-head h1{
+        font-size: 16px;
+    }
+    .king-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .container{
+        padding: 0px;
+        width: 100%;
+    }
+    .min-container{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .king-about-content{
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1200px){
+    .h-service{
+        font-size: 20px;
+    }
+    .p-service{
+        font-size: 18px;
+    }
+    .service-box{
+        display: block;
+        flex-direction: column;
+        
+    }
+    .services-containers{
+        justify-content: center;
+        align-items: center;
+
+    }
+    .service-container{
+       width: 90%;
+       align-items: center;
+
+    }
+    .service-form{
+        width: 90%;
+        min-height: 100vh;
+}
+    .service-form form{
+        width: 100%;
+        min-height: 60vh;
+}
+} 
+@media screen and (min-width:1200px){
+    .p-service{
+        font-size: 1.5rem;
+    }
+    .service-container{
+        width: 30%;
+        height: 400px;
+    }
+   .service-form{
+        width: 50%;
+        min-height: 100vh;
+}
+    .service-form form{
+        width: 90%;
+        min-height: 550px;
+}
+} 
+
+@media screen and (min-width:900px)  {
+    .king-name h2{
+        font-size: 6rem;
+    }
+    .king-name h1{
+        font-size: 5rem;
+    }
+    .king-name p{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:900px)  {
+    .king-name h2{
+        font-size: 4rem;
+    }
+    .king-name h1{
+        font-size: 4rem;
+    }
+    .king-name p{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:650px)  {
+    .king-name h2{
+        font-size: 2rem;
+    }
+    .king-name h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:500px)  {
+    .king-name h2{
+        font-size: 2rem;
+    }
+    .king-name h1{
+        font-size: 2rem;
+    }
+    .king-name p{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:330px)  {
+    .king-name h2{
+        font-size: 16px;
+    }
+    .king-name h1{
+        font-size: 18px;
+    }
+    .king-name p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1000px)  {
+    .king-form{
+        flex: column;
+        width: 40%;
+        height: 490px;
+        margin-top: 50px;
+        width: 90%;
+    }
+    .king-contact-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+@media screen and (min-width:1000px)  {
+    .king-form{
+    width: 40%;
+    height: 490px;
+    margin-left: 20%;
+    }
+}
+@media screen and (max-width:1000px)  {
+    .thank-min-container{
+        width: 90%;
+        margin-top: 20%;
+        border-radius: 20%;
+    }
+}
+@media screen and (min-width:1000px)  {
+    .thank-min-container{
+        width: 500px;
+        border-radius: 30%;
+        margin-top: 10px;
+    }
+}

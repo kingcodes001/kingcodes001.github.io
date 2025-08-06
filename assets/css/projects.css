@@ -1,0 +1,100 @@
+#king-projects{
+    padding-top: 15px;
+    width: 100%;
+    max-height: 100vh;
+}
+.king-projects h1{
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.king-projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: absolute;
+    text-decoration-style: initial;
+}
+.projects-box{
+    display: grid;
+    height: 300px;
+    width: 300px;
+    image-orientation: flip;
+    overflow: hidden;
+    margin: 15px;
+}
+.box-projects-img img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+.king-projects-info{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(27, 27, 27, .5);
+    font-display: initial;
+    bottom: -9.5rem;
+    transition: .5s;
+    
+
+}
+.projects-info p ,.projects-info h1{
+    position: relative;
+    color: white;
+    font-weight: bolder;
+
+}
+.projects-info h1{
+    padding: 15px;
+
+}
+.projects-box:hover  .king-projects-info {
+    bottom: -5rem;
+}
+.read-project{
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin: 15px;
+}
+
+
+/* project styling */
+.project-proposal{
+    display: none;
+    padding-top: 5px;
+    width: 100%;
+    background-color: white;
+    min-height: 100vh;
+}
+.proposal-head h1{
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: 3px dotted underline;
+}
+.proposal-infomation h3{
+    color: blue;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.proposal-head p{
+    color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.proposal-infomation{
+    color: black;
+    font-size: 20px;
+}
+.proposal-infomation ol li{
+    margin-left: 15px;
+    list-style-type: disc;
+    list-style-position: inside;
+}

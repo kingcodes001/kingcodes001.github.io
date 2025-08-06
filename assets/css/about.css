@@ -1,0 +1,148 @@
+#home{
+    width: 100%; 
+
+}
+.king-home-container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.king-name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+}
+.king-name h2{
+    text-shadow: 2px 0px 30px cyan;
+    -webkit-text-stroke: 2px white;
+    animation-name: king-name;
+    animation-duration: 2s;
+    animation-iteration-count: inherit;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: ease;
+}
+.king-name h1{
+    color: blue;
+    opacity: 1;
+    -webkit-text-stroke: 1px  white;
+    text-shadow: 10px 1px 10px white;
+}
+.king-name p{
+    color: cyan;
+    -webkit-text-stroke: 2px cyan;
+}
+@keyframes king-name{
+    0%{
+        opacity: 1;
+        text-align: center;
+    }
+    100%{
+        color: white;
+        opacity: 1;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+.king-about{
+    margin-top: 7%;
+}
+.king-about-head{
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+     margin: 20px auto;
+}
+.king-about-head h1{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+.king-about-head h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.min-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.king-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    max-width: fit-content;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 100%;
+}
+.pronic-link{
+    display: none;
+    background-color: rgba(5, 142, 17, 0.848);
+    width: fit-content;
+    padding: 12px;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+}
+.pronic-link:hover{
+    background-color: rgb(2, 235, 57);
+}
+.king-about-content{
+    flex: 1;
+}
+.king-about-content p{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 300;
+}
+#tutorial{
+    display: none;
+    visibility: hidden;
+}
+.readMore-btn{
+    color: white;
+    background: green;
+    border-radius: 15px;
+    font-size: 18px;
+    width: fit-content;
+    padding: 15px;
+    transition: all 1s;
+}
+.readMore-btn:hover{
+    color: rgb(178, 33, 33);
+}
+.read-more-text{
+    display: none;
+    transition-delay: all 5s;
+}
