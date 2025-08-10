@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-8182443081700649">
   <title>KING CODES</title>
-  <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
   <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -31,7 +32,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -273,10 +274,10 @@
           <div id="newsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="news1a.jpg" class="d-block w-100" alt="News Image 1">
+                <!-- <img src="news1a.jpg" class="d-block w-100" alt="News Image 1"> -->
               </div>
               <div class="carousel-item">
-                <img src="news1b.jpg" class="d-block w-100" alt="News Image 2">
+                <!-- <img src="news1b.jpg" class="d-block w-100" alt="News Image 2"> -->
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel1" data-bs-slide="prev">
@@ -421,7 +422,7 @@
           </div>
         </a>
 
-        <a href="https://www.instagram.com/king_codes001/">
+        <a href="https://www.instagram.com/king_codes_001/">
           <div class="king-contact-box">
             <div class="king-contact-icon">
               <i class="bx bxl-instagram" id="contact-icon"></i>
@@ -520,42 +521,7 @@
         </div>
     </div>
   <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
-<script>
-  $(document).ready(function () {
-    $('#newsToggleBtn').click(function () {
-      $('#newsOverlay').fadeIn();
-    });
-
-    $('#closeNews').click(function () {
-      $('#newsOverlay').fadeOut();
-    });
-  });
-  const skillBlocks = document.querySelectorAll('.skill-block');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animationPlayState = 'running';
-      }
-    });
-  }, { threshold: 0.3 });
-
-  skillBlocks.forEach(block => {
-    block.style.animationPlayState = 'paused';
-    observer.observe(block);
-  });
-  function openCommentModal() {
-    const commentModal = new bootstrap.Modal(document.getElementById('commentModal'), {
-      backdrop: 'static',
-      keyboard: false
-    });
-    commentModal.show();
-  }
-
-  function closeCommentModal() {
-    const commentModalEl = document.getElementById('commentModal');
-    const modalInstance = bootstrap.Modal.getInstance(commentModalEl);
-    modalInstance.hide();
-  }
+<script src="assets/js/script.js">
 </script>
 
 </body>
