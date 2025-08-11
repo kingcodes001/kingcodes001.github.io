@@ -9,7 +9,8 @@
   <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- Bootstrap Icons CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
 
@@ -30,8 +31,8 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
         </ul>
       </div>
@@ -67,12 +68,12 @@
       <div class="col-md-7 about-text">
   <h2 class="gradient-title">About Me</h2>
   <p class="animated-paragraph">
-    Hi! I’m Jackson, better known as King Codes,A visionary software engineer and the founder & CEO of KISO [ Kingdom of Innovations, Science, and Opportunities ].
-    <br>
-    With a passion for transforming ideas into impactful digital experiences, I specialize in building tech solutions that solve real-world problems and spark opportunity.I believe technology is a gateway to possibility.
-    <br>
-    💡<b> Whether you’re dreaming up your first app or leading an organization that needs smarter tools, I’m here to turn those dreams into reality — with innovation, code, and a whole lot of ambition.</b>
-
+    Hi, I'm Jackson, also known as King Codes. I'm a software developer and the founder of KISO Company. 
+    I love turning good ideas into useful digital tools that solve real world problems and create opportunities to youth.
+    I truly believe that software is a powerful tool for a better future. <br>
+    💡<b>   If you have a software idea for yourself or your company, 
+      I'm ready to turn that vision into a tool that's even better than you imagined. 
+      Let's connect and make it happen.
 
   </p>
   <!-- Animated Button -->
@@ -91,7 +92,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="myForm">
           <div class="mb-3">
             <label for="nameInput" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="nameInput" required>
@@ -119,30 +120,30 @@
 
 
 
-<!-- <section class="skills-reveal py-5" id="skills">
+<section class="skills-reveal py-5" id="skills">
   <div class="container">
     <h2 class="section-title text-center mb-5">My Skillz</h2>
     <div class="skills-wrapper">
 
-      Skill Block 
+      <!-- Skill Block  -->
       <div class="skill-block" style="--delay: 0s;">
-        <h3>Frontend Development</h3>
-        <p>HTML, CSS, JavaScript, React, Tailwind</p>
+        <h3>Software Development</h3>
+        <p>Mobile Apps, Web App and desktop apps</p>
       </div>
 
       <div class="skill-block" style="--delay: 0.2s;">
-        <h3>Backend Engineering</h3>
-        <p>Node.js, Python, Django, REST APIs</p>
+        <h3>Graphics Designer</h3>
+        <p>Let's design Logos, Banners and soon</p>
       </div>
 
       <div class="skill-block" style="--delay: 0.4s;">
-        <h3>DevOps & Cloud</h3>
-        <p>Docker, Kubernetes, AWS, CI/CD</p>
+        <h3>Project Management</h3>
+        <p>Let's put your idea into great development mode documenation</p>
       </div>
 
     </div>
   </div>
-</section> -->
+</section> 
 
 
 <section class="projects-section py-5 bg-light" id="projects">
@@ -156,7 +157,7 @@
           <img src="assets/projects/smart_manager/logo.png" class="card-img-top" alt="Smart Manager" width="50px">
           <div class="card-body">
             <h5 class="card-title">Smart Manager</h5>
-            <p class="card-text">A big solution for shop and markets management.</p>
+            <p class="card-text">A web app based system for management of shops<p>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viewModal1">View Info</button>
           </div>
         </div>
@@ -194,15 +195,19 @@
         <!-- Carousel -->
         <div id="carousel1" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-inner">
-            <!-- <div class="carousel-item active">
-              <img src="assets/projects/smart_manager/login.png" class="d-block w-100" alt="Screenshot 1">
-            </div> -->
-
             <div class="carousel-item active">
+              <img src="assets/projects/smart_manager/login.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+
+            <div class="carousel-item">
               <img src="assets/projects/smart_manager/goods.png" class="d-block w-100" alt="Screenshot 1">
             </div>
 
-            <div class="carousel-item active">
+            <div class="carousel-item">
+              <img src="assets/projects/smart_manager/products-1.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+
+            <div class="carousel-item">
               <img src="assets/projects/smart_manager/profile.png" class="d-block w-100" alt="Screenshot 1">
             </div>
 
@@ -218,9 +223,9 @@
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-
-        <p>Smart manager system a best solution for shop keepers and super market for managing their shops and keep their data safe and will be accessible anywhere and anaytime in it.</p>
-        <p>We create this system with great technolgy and structure that makes to be more suitable and perfect for every shop keeper to store it's data in a great way</p>
+        <p>Smart manager sytem is a product made by KISO company via its special teach known <b><i>kisoft Team</i></b>. </p>
+        <p>Smart manager is a next generation software solution that empower your business by giving your an accuratte picture of your business growth by tracking spendings, profits, loss and sales</p>
+        <p>Smart manager is the best manager/system for shop keepers/manager for utilizing and run their shop smoothly and its available only with total free use of system without any charges involved and no adds</p>
         <button class="btn btn-outline-primary" onclick="openCommentModal()">Leave a Comment</button>
       </div>
     </div>
@@ -236,7 +241,11 @@
         <button type="button" class="btn-close" onclick="closeCommentModal()"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="commentName" class="form-label">Your email</label>
+            <input type="email" class="form-control" id="commentName" required>
+          </div>
           <div class="mb-3">
             <label for="commentName" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="commentName" required>
@@ -267,17 +276,78 @@
   </div>
   <div class="news-content container">
     <div class="row g-4">
+ <!-- News Card -->
+      <div class="col-md-4">
+        <div class="card news-card">
+          <div id="newsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/newz/scale ai ceo.jpeg" class="d-block w-100" alt="News Image 1">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="assets/newz/logo.png" class="d-block w-100" alt="News Image 2">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Alexander Wang</h5>
+            <p class="card-text">
+              Alexander Wang is a prominent American entrepreneur and the co-founder of Scale AI, a company that provides data labeling and model evaluation for AI development. Born in Los Alamos, New Mexico, to physicists, he showed an early talent for computer science.
+            Wang dropped out of MIT at 19 to co-found Scale AI in 2016. Under his leadership, the company quickly became a crucial partner for businesses and governments working with artificial intelligence. His success led him to become the world's youngest self-made billionaire at age 24. He stepped down as CEO of Scale AI in 2025 to join Meta but remains on the company's board.
+            <b>Who is ur favrite man in the list???</b>
+            </p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</button>
+          </div>
+        </div>
+      </div>
 
+      <!-- Add more news cards as needed -->
       <!-- News Card -->
       <div class="col-md-4">
         <div class="card news-card">
           <div id="newsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <!-- <img src="news1a.jpg" class="d-block w-100" alt="News Image 1"> -->
+                <img src="assets/newz/sam altman.jpeg" class="d-block w-100" alt="News Image 1">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="assets/newz/logo.png" class="d-block w-100" alt="News Image 2">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sam Altman</h5>
+            <p class="card-text">
+              Sam Altman is a key figure in the AI industry, known for his leadership at OpenAI, the company behind ChatGPT. He dropped out of Stanford to co-found his first company, Loopt. He later became president of Y Combinator, a prominent startup accelerator, before taking the helm at OpenAI in 2019. His career is marked by a focus on technology that benefits humanity and his influence has made him a leading voice in the conversation about AI's future.
+             </p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more news cards as needed -->
+       <!-- News Card -->
+      <!-- <div class="col-md-4">
+        <div class="card news-card">
+          <div id="newsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/newz/kiso logo.png" class="d-block w-100" alt="News Image 1">
               </div>
               <div class="carousel-item">
-                <!-- <img src="news1b.jpg" class="d-block w-100" alt="News Image 2"> -->
+                <img src="assets/newz/logo.png" class="d-block w-100" alt="News Image 2">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel1" data-bs-slide="prev">
@@ -288,8 +358,41 @@
             </button>
           </div>
           <div class="card-body">
-            <h5 class="card-title">AIs Updates</h5>
-            <p class="card-text">All Ais updates in the world.</p>
+            <h5 class="card-title">KISO Company</h5>
+            <p class="card-text">KISO company in Kisoft team have release a great announcement of start release some little teahing videos via its social media platform.<br>
+            KISO company also plan to release another software product after launching smart manager. That will be propabably for student management mostly in tuitions and seminaries schools in Tanzania and it will be in English language.<br>
+            <b>What do you think about our new software product for student management ???</b>
+            </p>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Add more news cards as needed -->
+      <!-- News Card -->
+      <div class="col-md-4">
+        <div class="card news-card">
+          <div id="smartlaunching" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/projects/smart_manager/logo.png" class="d-block w-100" alt="News Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/projects/smart_manager/smart manager post.png" class="d-block w-100" alt="News Image 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#smartlaunching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#smartlaunching" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Smart Manager Launching</h5>
+            <p class="card-text">
+              <br>
+KISO is launching an online version of its Smart Manager System, giving users the ability to manage their shops from anywhere using the internet. The company plans to release the free-to-use system before September 27, 2025. KISO is asking for public support for the launch, highlighting that this new feature will be very helpful for all shop managers and keepers. </p>
             <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</button>
           </div>
         </div>
@@ -310,7 +413,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="myForm">
           <input type="text" class="form-control mb-3" placeholder="Your Name" required>
           <textarea class="form-control mb-3" rows="3" placeholder="Your Comment" required></textarea>
           <button type="submit" class="btn btn-primary w-100">Send</button>
@@ -372,7 +475,7 @@
         <h5 class="modal-title" id="orderModalLabel">Order Service: <span id="selectedService"></span></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-      <form>
+      <form id="myForm">
         <div class="modal-body">
           <input type="text" class="form-control mb-3" placeholder="Your Name" required>
           <input type="email" class="form-control mb-3" placeholder="Your Email" required>
@@ -389,137 +492,78 @@
 
 
 <!-- contacy -->
-
-
-<section id="contacts">
-  <div class="contact-king">
-    <div class="king-contact-intro">
-      <h1 class="text-center mb-5">Contact Me</h1>
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">I'd love to hear from you! Fill out the form below and I'll get back to you soon.</p>
     </div>
-
-    <div class="king-contact-container">
-
-      <div class="king-contact-info">
-        <div class="king-contact-box">
-          <div class="king-contact-icon">
-            <i class="bx bx-location-plus" id="contact-icon"></i>
-          </div>
-          <div class="king-contact-text">
-            <h1>Location</h1>
-            <p>Tanzania<br>Dar es Salaam</p>
-          </div>
+    <form id="myForm">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control custom-input" placeholder="Your Name" required>
         </div>
-
-        <a href="mailto:kingcodes001@gmail.com">
-          <div class="king-contact-box">
-            <div class="king-contact-icon">
-              <i class="bx bx-envelope" id="contact-icon"></i>
-            </div>
-            <div class="king-contact-text">
-              <h1>Email</h1>
-              <p>kingcodes001@gmail.com</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.instagram.com/king_codes_001/">
-          <div class="king-contact-box">
-            <div class="king-contact-icon">
-              <i class="bx bxl-instagram" id="contact-icon"></i>
-            </div>
-            <div class="king-contact-text">
-              <h1>Instagram</h1>
-              <p>king_codes001</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.tiktok.com/@king_code001?lang=en">
-          <div class="king-contact-box">
-            <div class="king-contact-icon">
-              <i class="bx bxl-tiktok" id="contact-icon"></i>
-            </div>
-            <div class="king-contact-text">
-              <h1>TikTok</h1>
-              <p>king_codes001</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/channel/UCReCccc7fF4tgtMki8AN4KA">
-          <div class="king-contact-box">
-            <div class="king-contact-icon">
-              <i class="bx bxl-youtube" id="contact-icon"></i>
-            </div>
-            <div class="king-contact-text">
-              <h1>YouTube</h1>
-              <p>King_codes001</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://twitter.com/KING_CODES001">
-          <div class="king-contact-box">
-            <div class="king-contact-icon">
-              <i class="bx bxl-twitter" id="contact-icon"></i>
-            </div>
-            <div class="king-contact-text">
-              <h1>Twitter</h1>
-              <p>king-codes001</p>
-            </div>
-          </div>
-        </a>
+        <div class="col-md-6">
+          <input type="email" class="form-control custom-input" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control custom-input" placeholder="Subject" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control custom-input" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary custom-btn">Send Message</button>
+        </div>
       </div>
-
-      <div class="king-form">
-        <span class="border-lines"></span>
-        <form action="https://formsubmit.co/kingcodes001@gmail.com" method="POST">
-          <h1>Contact Form</h1>
-
-          <div class="input-box">
-            <input type="text" name="name" required/>
-            <span>Full Name</span>
-          </div>
-
-          <div class="input-box">
-            <input type="email" name="email" required/>
-            <span>Email</span>
-          </div>
-
-          <div class="input-box">
-            <textarea name="message" required></textarea>
-            <span>Message</span>
-          </div>
-
-          <input type="hidden" name="_next" value="https://kingcodes001.github.io/contact.html" />
-          <input type="hidden" name="_subject" value="New message" />
-          <input type="hidden" name="_template" value="box" />
-          <input type="hidden" name="_captcha" value="false" />
-
-          <div class="input-buttons">
-            <input class="bt btn-outline-primary" type="submit" value="Send" />
-            <!-- <input type="reset" value="Clear Data" /> -->
-          </div>
-        </form>
-      </div>
-
-    </div>
+    </form>
   </div>
 </section>
 
 
-
- <div class="copyright-king">
-       <p> Copyright 2024 KING_CODES. All Rights Reserved.</p><br>
-        <div class="social-medias">
-            <div class="media">
-            <a href="https://www.instagram.com/king_codes_001/"><i class="bx bxl-instagram" id="contact-copy"></i></a>
-            <a href="https://www.tiktok.com/@king_code001?lang=en"><i class="bx bxl-tiktok" id="contact-copy"></i></a>
-            <a href="https://www.youtube.com/channel/UCReCccc7fF4tgtMki8AN4KA" target="_parent"> <i class="bx bxl-youtube" id="contact-copy"></i></a>
-            <a href="https://twitter.com/KING_CODES001" target="_parent"><i class="bx bxl-twitter" id="contact-copy"></i></a>
-            </div>
-        </div>
+<footer class="footer-section mt-5">
+  <div class="container text-center py-4">
+    <p class="footer-text mb-2">© 2024 KING_CODES. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/king_codes_001/" class="social-link"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/kingcodes001" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/kingcodes001" class="social-link"><i class="bi bi-github"></i></a>
     </div>
+  </div>
+</footer>
+<script>
+  //from submition
+$(document).ready(function() {
+  $('#myForm').on('submit', function(e) {
+    // Prevent the default form submission
+    e.preventDefault();
+
+    // Serialize the form data for submission (if you need it later)
+    var formData = $(this).serialize();
+
+    // Display the SweetAlert success message
+    Swal.fire({
+      title: 'Success!',
+      text: 'Your form has been submitted.',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+
+    // Optional: After the user closes the alert, you can submit the form
+    // Swal.fire(...).then((result) => {
+    //   if (result.isConfirmed) {
+    //     // Un-comment this line to submit the form after the alert is closed
+    //     // this.submit();
+    //   }
+    // });
+  });
+});
+  $(document).ready(function(){
+    $(document).on("contextmenu",function(e){
+      return false;
+    });
+  });
+</script>
   <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
 <script src="assets/js/script.js">
 </script>
