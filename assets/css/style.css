@@ -93,7 +93,7 @@
       transition: color 0.3s ease;
     }
 
-    .navbar-nav .nav-link::after {
+    .navbar-nav .nav-link::after  {
       content: '';
       position: absolute;
       width: 0%;
@@ -452,12 +452,6 @@
 @keyframes slideUp {
   from { transform: translateY(100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
-}
-
-/* Blur Background for Modal */
-.blur-bg {
-  backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*service css part*/

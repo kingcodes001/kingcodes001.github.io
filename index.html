@@ -29,7 +29,7 @@
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -66,7 +66,7 @@
 
       <!-- Right: About Text -->
       <div class="col-md-7 about-text">
-  <h2 class="gradient-title">About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <p class="animated-paragraph">
     Hi, I'm Jackson, also known as King Codes. I'm a software developer and the founder of KISO Company. 
     I love turning good ideas into useful digital tools that solve real world problems and create opportunities to youth.
@@ -128,17 +128,17 @@
       <!-- Skill Block  -->
       <div class="skill-block" style="--delay: 0s;">
         <h3>Software Development</h3>
-        <p>Mobile Apps, Web App and desktop apps</p>
+        <p>Mobile Apps, Web App and desktop apps.</p>
       </div>
 
       <div class="skill-block" style="--delay: 0.2s;">
         <h3>Graphics Designer</h3>
-        <p>Let's design Logos, Banners and soon</p>
+        <p>Let's design Logos, Banners and so on.</p>
       </div>
 
       <div class="skill-block" style="--delay: 0.4s;">
         <h3>Project Management</h3>
-        <p>Let's put your idea into great development mode documenation</p>
+        <p>Let's put your idea into great development mode documenation.</p>
       </div>
 
     </div>
@@ -148,7 +148,7 @@
 
 <section class="projects-section py-5 bg-light" id="projects">
   <div class="container">
-    <h2 class="text-center mb-5">Featured Projects</h2>
+    <h2 class="section-title text-center mb-5">Featured Projects</h2>
     <div class="row g-4">
 
       <!-- Project 1 -->
@@ -208,11 +208,19 @@
             </div>
 
             <div class="carousel-item">
-              <img src="assets/projects/smart_manager/profile.png" class="d-block w-100" alt="Screenshot 1">
+              <img src="assets/projects/smart_manager/dashboard-1.png" class="d-block w-100" alt="Screenshot 2">
             </div>
 
             <div class="carousel-item">
-              <img src="assets/projects/smart_manager/dashboard-1.png" class="d-block w-100" alt="Screenshot 2">
+              <img src="assets/projects/smart_manager/sales-modal.png" class="d-block w-100" alt="Screenshot 2">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/projects/smart_manager/sales-records.png" class="d-block w-100" alt="Screenshot 2">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/projects/smart_manager/profile.png" class="d-block w-100" alt="Screenshot 2">
             </div>
 
           </div>
@@ -225,7 +233,6 @@
         </div>
         <p>Smart manager sytem is a product made by KISO company via its special teach known <b><i>kisoft Team</i></b>. </p>
         <p>Smart manager is a next generation software solution that empower your business by giving your an accuratte picture of your business growth by tracking spendings, profits, loss and sales</p>
-        <p>Smart manager is the best manager/system for shop keepers/manager for utilizing and run their shop smoothly and its available only with total free use of system without any charges involved and no adds</p>
         <button class="btn btn-outline-primary" onclick="openCommentModal()">Leave a Comment</button>
       </div>
     </div>
@@ -235,7 +242,7 @@
 <!-- it commect modal fro prject 1 -->
 <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content blur-bg">
+    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="commentModalLabel">Comment on Project</h5>
         <button type="button" class="btn-close" onclick="closeCommentModal()"></button>
@@ -407,7 +414,7 @@ KISO is launching an online version of its Smart Manager System, giving users th
 <!-- news overaying commenting modala -->
 <div class="modal fade" id="commentModal" tabindex="9999" aria-labelledby="commentModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content blur-bg">
+    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="commentModalLabel">Leave a Comment</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -425,7 +432,7 @@ KISO is launching an online version of its Smart Manager System, giving users th
 
 <!-- services part -->
 <section class="container py-5" id="services">
-  <h2 class="text-center mb-5">My Services</h2>
+  <h2 class="section-title text-center mb-5">My Services</h2>
   <div class="row g-4">
 
     <!-- Web Development -->
@@ -458,7 +465,7 @@ KISO is launching an online version of its Smart Manager System, giving users th
         <div class="card-body">
           <i class="bi bi-palette service-icon text-warning"></i>
           <h5 class="card-title mt-3">UI/UX Design</h5>
-          <p class="card-text">Designs that are not just beautiful—but intuitive and user-friendly.</p>
+          <p class="card-text">Designs that are not just beautiful but intuitive and user-friendly.</p>
           <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#orderModal" onclick="setService('UI/UX Design')">Order</button>
         </div>
       </div>
@@ -492,10 +499,10 @@ KISO is launching an online version of its Smart Manager System, giving users th
 
 
 <!-- contacy -->
-<section id="contact" class="contact-section py-5">
+<section id="contacts" class="contact-section py-5">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">Get in Touch</h2>
+      <h2 class="section-title">Contact Me</h2>
       <p class="section-subtitle">I'd love to hear from you! Fill out the form below and I'll get back to you soon.</p>
     </div>
     <form id="myForm">
@@ -531,42 +538,8 @@ KISO is launching an online version of its Smart Manager System, giving users th
     </div>
   </div>
 </footer>
-<script>
-  //from submition
-$(document).ready(function() {
-  $('#myForm').on('submit', function(e) {
-    // Prevent the default form submission
-    e.preventDefault();
-
-    // Serialize the form data for submission (if you need it later)
-    var formData = $(this).serialize();
-
-    // Display the SweetAlert success message
-    Swal.fire({
-      title: 'Success!',
-      text: 'Your form has been submitted.',
-      icon: 'success',
-      confirmButtonText: 'OK'
-    });
-
-    // Optional: After the user closes the alert, you can submit the form
-    // Swal.fire(...).then((result) => {
-    //   if (result.isConfirmed) {
-    //     // Un-comment this line to submit the form after the alert is closed
-    //     // this.submit();
-    //   }
-    // });
-  });
-});
-  $(document).ready(function(){
-    $(document).on("contextmenu",function(e){
-      return false;
-    });
-  });
-</script>
-  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="assets/js/script.js">
-</script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
