@@ -168,6 +168,18 @@
         </div>
       </div>
 
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <img src="assets/projects/smart_manager/kings/logo.png" class="card-img-top" alt="Smart Manager" width="50px">
+          <div class="card-body">
+            <h5 class="card-title">Kings' Academy</h5>
+            <p class="card-text">A special system for management of students data in instutions<p>
+            <button class="btn btn-primary" data-bs-toggle="king_project" data-bs-target="#viewModal1">View Info</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Project 2 -->
      <!--  <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
@@ -276,6 +288,46 @@
     </div>
   </div>
 </div>
+
+<!-- project kings academy -->
+  <!-- modal for project 1 -->
+<div class="modal fade" id="viewModal1" tabindex="-1" aria-labelledby="viewModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="viewModalLabel1">Smart Manager</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Carousel -->
+        <div id="carousel1" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+
+            <div class="carousel-item">
+              <img src="assets/projects/smart_manager/kings/king1.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/projects/smart_manager/kings/king2.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p>King's Academy systme for management of students dataz is steal on development under Kisoft Team.</p>
+        <button class="btn btn-outline-primary" onclick="openCommentModal()">Leave a Comment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
 
 <!-- it commect modal fro prject 1 -->
 <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
@@ -708,6 +760,7 @@ KISO is launching an online version of its Smart Manager System, giving users th
 
 </body>
 </html>
+
 
 
 
