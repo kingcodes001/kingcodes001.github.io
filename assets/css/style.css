@@ -92,6 +92,9 @@
       position: relative;
       transition: color 0.3s ease;
     }
+.navbar-nav .nav-link .active{
+    width: 100%;
+}
 
     .navbar-nav .nav-link::after  {
       content: '';
@@ -575,4 +578,5 @@
 
 .social-link:hover {
   color: #007bff;
+
 }
