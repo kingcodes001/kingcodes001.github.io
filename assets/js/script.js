@@ -26,7 +26,7 @@ $(document).ready(function () {
           section.position().top - 60 <= scrollPos &&
           section.position().top + section.height() > scrollPos
         ) {
-          $('.navbar-nav li a').removeClass('active');
+          $('.navbar-nav .nav-link').removeClass('active');
           $(this).addClass('active');
         }
       });
@@ -117,4 +117,5 @@ $(document).ready(function () {
     return false;
   }
 };
+
 
